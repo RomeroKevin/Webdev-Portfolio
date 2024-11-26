@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fontFairText {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: rgb(52, 42, 51);
+    font-size: 20px;
+}
+
+.sofiaText {
+    font-family: "Sofia", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    color: rgb(74, 35, 136);
+    font-size: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.front_tittle {
+    font-size: 100px;
+    line-height: 1.2;
+    text-align: left;
+    margin-right: 20px;
+    word-wrap: break-word;
+    line-height: 1.2;
+}
+
+.headshot {
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 165px;
+    padding: 100px;
+}
+
+.projectList {
+    padding: 100px;
+    align-items: center;
+    margin-top: -200px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.tablediv {
+    margin-top: -75px;
+}
+
+/*Light mode styles */
+        .light-mode {
+            background: radial-gradient(circle at bottom, #635998, #fae6fa 80%);
+            color: black;
+        }
+
+        /* Dark mode styles */
+        .dark-mode {
+            background-color: #370731;
+            color: white;
+        }
+
+        .dark-mode .fontFairText, .dark-mode .sofiaText {
+            color: white;
+        }
+
+        /* Button positioned at the top right corner */
+        #toggleButton {
+            position: absolute;
+            top: 20px; /* Adjust top margin */
+            right: 20px; /* Adjust right margin */
+            background-color: #fff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dark-mode #toggleButton {
+            background-color: #333;
+            color: white;
+        }
+
+        .light-mode #toggleButton {
+            background-color: #fff;
+            color: black;
+        }

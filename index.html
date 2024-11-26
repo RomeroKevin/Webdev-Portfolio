@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+
+    <title>Homework5 - Kevin Romero</title>
+</head>
+
+<body class="light-mode">
+    <!-- Button placed at the top right corner -->
+    <button id="toggleButton">Switch to Dark Mode</button>
+
+    <div class="title-container">
+        <h1 class="front_tittle fontFairText">
+            Kevin
+            <br>
+            Romero
+        </h1>
+        <img src="headshot.jpg" alt="Picture of me" class="headshot">
+    </div>
+    <div class="text sofiaText">
+        <a href="https://www.linkedin.com/in/kevin-romero-80a24a242/">My LinkedIn</a>
+
+        <p>
+        Hello my name is Kevin Romero.
+        I'm a UHD senior graduating this December with a bachelors degree in computer science.
+        I'm also enrolled in Web Programming which is taught by Professor Ting Zhang. 
+        </p>
+
+        <p>I love to explore the city of Houston by trying new restaurants, staying active, and listening to good music. I was born and raised in Houston, Texas. This city means so much to me
+        and will always hold a special place in my heart. As I'm approaching graduation I look forward to see where life takes me and the man I'll become. 
+        As of now I'm applying to a wide varity of positions related to IT, Cloud, Engineering, and Analyst postions. I know the job market is tough at the moment for entry level positions,
+        but I know things will all work out. I just have to work hard like I've always have. 
+        </p>
+    </div>
+
+    <div class="projectList fontFairText">
+        <p style="text-align: center;">Below is a list of a few projects I have worked on</p>
+        <ul>
+            <li><b>GeneNode</b> - A visually appealing genetic database that displays regional data</li>
+            <li><b>Samurai Journey</b> - Wrote several C# scripts that provided the player, enemy, and camera movement for a 2D platformer game.</li>
+            <li><b>Hair Appointment Booker</b> - Developed a responsive and visually appealing landing page using HTML and CSS, ensuring compatibility across various devices
+                 and screen sizes that allows clients to book appointments for my local hair salon.</li>
+        </ul>
+    </div>
+
+    <div class="tablediv fontFairText">
+        <p style="text-align: center;">My skills are listed below</p>
+        <table>
+            <tr>
+              <th>Languages</th>
+              <th>Frameworks</th>
+              <th>Tools</th>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>React</td>
+              <td>Github</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Node.js</td>
+              <td>VS Code</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Three.js</td>
+                <td>Jupyter Notebooks</td>
+              </tr>
+          </table>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <script>
+        const button = document.getElementById('toggleButton');
+        const body = document.body;
+
+        button.addEventListener('click', function() {
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                button.textContent = 'Switch to Light Mode';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                button.textContent = 'Switch to Dark Mode';
+            }
+        });
+    </script>
+
+</body>
+</html>
